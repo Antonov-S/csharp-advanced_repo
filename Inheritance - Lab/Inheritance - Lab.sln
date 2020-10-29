@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Hierarchical Inheritanc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hierarchical Inheritance again", "Hierarchical Inheritance again\Hierarchical Inheritance again.csproj", "{7543D0E1-AAE5-4BC3-BE14-0AD38719200B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farm", "Farm\Farm.csproj", "{83BB1428-D281-4E1F-90AD-22D6977046E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farm", "Farm\Farm.csproj", "{83BB1428-D281-4E1F-90AD-22D6977046E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRandomList", "CustomRandomList\CustomRandomList.csproj", "{8AF9170E-DB80-42CD-8A13-1FE41988B72B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomStack", "CustomStack\CustomStack.csproj", "{A6219878-1D32-4728-8C9B-368C93A502EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{83BB1428-D281-4E1F-90AD-22D6977046E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83BB1428-D281-4E1F-90AD-22D6977046E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83BB1428-D281-4E1F-90AD-22D6977046E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF9170E-DB80-42CD-8A13-1FE41988B72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF9170E-DB80-42CD-8A13-1FE41988B72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF9170E-DB80-42CD-8A13-1FE41988B72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF9170E-DB80-42CD-8A13-1FE41988B72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6219878-1D32-4728-8C9B-368C93A502EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6219878-1D32-4728-8C9B-368C93A502EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6219878-1D32-4728-8C9B-368C93A502EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6219878-1D32-4728-8C9B-368C93A502EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
