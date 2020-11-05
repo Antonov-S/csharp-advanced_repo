@@ -14,39 +14,50 @@ namespace Animals
 
             while ((command = Console.ReadLine()) != "Beast!")
             {
-                string[] token = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                string name = token[0];
-                int age = int.Parse(token[1]);
-                if (age <= 0)
+                
+
+                try
                 {
+
+                    string[] token = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                    string name = token[0];
+                    int age = int.Parse(token[1]);
+                    string gender = token[2];
+
+                    switch (command)
+                    {
+                        case "Dog":
+                            Dog dog = new Dog(name, age, gender);
+                            animals.Add(dog);
+                            break;
+                        case "Cat":
+                            Cat cat = new Cat(name, age, gender);
+                            animals.Add(cat);
+                            break;
+                        case "Frog":
+                            Frog frog = new Frog(name, age, gender);
+                            animals.Add(frog);
+                            break;
+                        case "Kittens":
+                            Kitten kitten = new Kitten(name, age, gender);
+                            animals.Add(kitten);
+                            break;
+                        case "Tomcat":
+                            Tomcat tomcat = new Tomcat(name, age, gender);
+                            animals.Add(tomcat);
+                            break;
+                    }
+
+
+                }
+                catch (Exception)
+                {
+
                     Console.WriteLine("Invalid input!");
-                    continue;
                 }
 
-                string gender = token[2];
-                switch (command)
-                {
-                    case "Dog":
-                        Dog dog = new Dog(name, age, gender);
-                        animals.Add(dog);
-                        break;
-                    case "Cat":
-                        Cat cat = new Cat(name, age, gender);
-                        animals.Add(cat);
-                        break;
-                    case "Frog":
-                        Frog frog = new Frog(name, age, gender);
-                        animals.Add(frog);
-                        break;
-                    case "Kittens":
-                        Kitten kitten = new Kitten(name, age, gender);
-                        animals.Add(kitten);
-                        break;
-                    case "Tomcat":
-                        Tomcat tomcat = new Tomcat(name, age, gender);
-                        animals.Add(tomcat);
-                        break;
-                }
+                
+
 
             }
 
